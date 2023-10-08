@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Oswald:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
+*
+{
+    overflow: hidden;
+}
+
 .wrapper
 {
     background-color: #131519;
     width: 100%;
-    height: 96vh;
+    height: 94vh;
     text-align: center;
    
     font-family: 'Roboto', sans-serif;
     background-position: center;
     object-fit: cover;
+  
+   
    
 }
 .main
@@ -18,12 +25,12 @@
     justify-content: space-between;
     width: 200px;
     margin: 20px auto;
- 
+   
 }
 h3{
     border: none;
     color: black;
-    background-color: yellow;
+    background-color: aqua;
     width: fit-content;
     height: fit-content;
     border-radius: 5px;
@@ -47,6 +54,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+ 
 }
 
 .grid div{
@@ -83,7 +91,20 @@ h3{
 @media (max-width:346px)
 {
     .main{
-        width:160px;
-        margin: 12px auto; 
-      }
-  }
+        width: 160px;
+      margin: 12px auto; 
+    }
+}
+@media (max-width:260px)
+{
+    *
+    {
+        transform: scale(0.95);
+    }
+}
+@media (max-width:215px)
+{
+    *
+    {
+        transform: scale(0.9);
+    }
